@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Volunteer</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- My own stuff -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand font-lemonada">* WebAdoption *</span>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-heart-empty"></span> Pets <span class="caret"></span></a>
+            	<ul class="dropdown-menu">
+            		<li><a href="adoptDog.html">Dog Gallery</a></li>
+            		<li><a href="adoptCat.html">Cat Gallery</a></li>
+            	</ul>
+            </li>
+            <li class="active"><a href="volunteer.html"><span class="glyphicon glyphicon-user"></span> Volunteer</a></li>
+            <li><a href="products.html"><span class="glyphicon glyphicon-shopping-cart"></span> Products</a></li>
+            <li><a href="events.html"><span class="glyphicon glyphicon-globe"></span> Events</a></li>
+            <li><a href="#contact"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+            <li class="active"><a href="donate.html"><span class="glyphicon glyphicon-piggy-bank"></span> Donate</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container-fluid text-center bg-grey">
+    	<div class="containerVolunteer">
+    		<span class="font-lemonada"><h1>Volunteer Today <span class="glyphicon glyphicon-user"></span></h1></span>
+    		<div class="row">
+    			<div class="col-md-4 text-center">
+    				<img id="donateTodayImage" src="img/volunteer2.jpg" alt="Volunteer Today">
+    				<img id="donateTodayImage" src="img/volunteer.jpg" alt="Volunteer Today">
+    				<img id="donateTodayImage" src="img/volunteer3.jpg" alt="Volunteer Today">
+    			</div>
+  				<div class="col-md-8">
+  					<div class="containerVolunteerMessage jumbotron text-justify">
+  						<p class="indent">Welcome to the WebAdoption Animal Rescue Volunteer page. Being a volunteer is extremely rewarding, educational, exciting and fun. Walking a dog, socializing with a cat, providing a clean shelter environment, or even giving an animal a bath or pat on the head, can have a huge impact on the lives of all our shelter animals. It is rewarding to see how dogs and cats respond to the love they receive while they are at the shelter.  Our Volunteer Program was specifically created to support staff in completing our rescue mission.   We would like to thank you for choosing to participate in our program. As a volunteer, you are an asset to our organization and to the many dogs and cats that need loving homes. We hope that the time you spend here will be as rewarding to you as it is to the animals you care for. WebAdoption Animal Rescue is a No-Kill, non-profit organization. As a result, we recognize the value of your time and thank you for giving your time as a volunteer to help change the life of an animal in need.</p><br>
+
+						<p>
+							<ul>
+								<li><b>Volunteers must be at least 16 years old and anyone under the age of 16 must have a legal guardian with them the entire time.</b></li>
+								<li><b>Volunteers between the age of 16-17 years old must have a guardian present during orientation.</b></li>
+								<li><b>All volunteers must submit a complete, signed application online.</b></li>
+								<li><b>All volunteers must attend an orientation prior to working with our animals. Orientation dates will be provided upon completion of application.</b></li>
+								<li><b>All volunteers must bring a valid I.D. to orientation (Guardians I.D. for under 18)</b></li>
+								<li><b>All volunteers who have been inactive for more than 1 year must complete a new application and attend a Volunteer Orientation.</b></li>
+							</ul>
+						</p>
+  					</div>
+  				</div>
+    		</div>
+    	</div>
+    </div>
+
+    <section id="contact">
+	    <div class="container-fluid text-center">
+	    	<span class="font-lemonada"><h1>Contact us <span class="glyphicon glyphicon-envelope"></span></h1></span>
+	    	<div class="row">
+		        <div class="col-md-8">
+		            <div class="well well-sm">
+		                <form>
+		                <div class="row">
+		                    <div class="col-md-6">
+		                        <div class="form-group">
+		                            <label for="name">Name</label>
+		                            <div class="input-group">
+		                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
+		                                </span>   
+		                            	<input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+		                            </div> 
+		                        </div>		                        
+		                        <div class="form-group">
+		                            <label for="subject">Subject</label>
+		                            <div class="input-group">
+		                                <span class="input-group-addon"><span class="glyphicon glyphicon-list"></span>
+		                                </span>
+		                            	<select id="subject" name="subject" class="form-control" required="required">
+			                                <option value="na" selected="">Choose One:</option>			                                
+			                                <option value="volunteering">Volunteering</option>
+			                            </select>
+			                        </div>    
+		                        </div>
+		                    </div>
+		                    <div class="col-md-6">
+		                        <div class="form-group">
+		                            <label for="name">Message</label>
+		                            <div class="input-group">
+		                                <span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span>
+		                                </span>
+		                            	<textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+		                                placeholder="Message"></textarea>
+		                            </div>    
+		                        </div>
+		                    </div>
+		                    <div class="col-md-12">
+		                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+		                            Send Message <span class="glyphicon glyphicon-send"></span></button>
+		                    </div>
+		                </div>
+		                </form>
+		            </div>
+		        </div>
+		        <div class="col-md-4">
+		            <form>
+		            <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+		            <address>
+		                <strong><span class="glyphicon glyphicon-home"></span> Adress:</strong><br>
+		                795 Folsom Ave, Suite 600<br>
+		                San Francisco, CA 94107<br>
+		                
+		                <br><span class="glyphicon glyphicon-earphone"></span>
+		                (123) 456-7890
+		            </address>
+		            <address>
+		                <strong><span class="glyphicon glyphicon-envelope"></span> Email:</strong><br>
+		                <a href="mailto:#">webAdoption@gmail.com</a>
+		            </address>
+		            </form>
+		        </div>
+		    </div>
+	    </div>
+	</section>
+
+	<footer class="footer">
+      	<div class="container-fluid text-center">
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-youtube"></a>
+			<a href="#" class="fa fa-instagram"></a><br>
+			<span class="font-lemonada footer-information">Project: * WebAdoption: Adopt a friend *
+			<br>Programmer: Thiago S.</span>
+		</div>
+    </footer>
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

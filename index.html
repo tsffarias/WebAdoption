@@ -1,0 +1,432 @@
+<!-- 
+	Project: * WebAdoption: Adopt a friend *
+	Programmer: Thiago S.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WebAdoption</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- My own stuff -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand font-lemonada">* WebAdoption *</span>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-heart-empty"></span> Adopt <span class="caret"></span></a>
+            	<ul class="dropdown-menu">
+            		<li><a href="adoptDog.html">Dog Gallery</a></li>
+            		<li><a href="adoptCat.html">Cat Gallery</a></li>
+            	</ul>
+            </li>
+            <li><a href="volunteer.html"><span class="glyphicon glyphicon-user"></span> Volunteer</a></li>
+            <li><a href="#shop"><span class="glyphicon glyphicon-shopping-cart"></span> Products</a></li>
+            <li><a href="events.html"><span class="glyphicon glyphicon-globe"></span> Events</a></li>
+            <li><a href="#contact"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+            <li class="active"><a href="donate.html"><span class="glyphicon glyphicon-piggy-bank"></span> Donate</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="img/carousel/carousel1.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary buttonCarosel" href="adopt.html" role="button"><span class="glyphicon glyphicon-heart-empty"></span> Adopt</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="img/carousel/carousel2.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary buttonCarosel" href="volunteer.html" role="button"><span class="glyphicon glyphicon-user"></span> Volunteer</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="img/carousel/carousel3.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary buttonCarosel" href="donate.html" role="button"><span class="glyphicon glyphicon-piggy-bank"></span> Donate</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="fourth-slide" src="img/carousel/carousel4.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary buttonCarosel" href="adopt.html" role="button"><span class="glyphicon glyphicon-heart"></span> Adopt</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+    <div class="container-fluid text-center">
+    	<div class="jumbotron text-center">
+    		<span class="font-lemonada"><h1>Welcome to WebAdoption</h1></span>
+    		<p> WebAdoption is a non-profit organization located in Brazil, Ilha Solteira-SP, where we provide short and long term humane solutions to the homeless dogs and cats population, exposed to abuses, hunger and often, a cruel death..<br>
+
+			We transform rescued dogs and cats (sometimes very scared or shy) into safe pets for the right people-companions.
+			<br>
+			With us, a pet stops subsisting and starts living! Make a donation today and help us save more lifes :)
+
+ 			</p>
+    		<br>    
+    	</div>
+
+    	<!-- INFORMATION -->
+
+      	<div id="divInformation" class="row">
+        	<h1>Come visit us! <span class="glyphicon glyphicon-time"></span></h1><br>
+        	<div class="col-md-3 text-center">
+          		<a href="donate.html">
+          			<div id="thumbnailInfo" class="thumbnail">
+        				<img src="img/DonationPug.jpg" alt="Donate">
+	        			<h1><strong>Donate</strong></h1>
+	        			<p class="titleCard">Help us take care of lifes</p>    				
+      				</div>
+      			</a>
+        	</div>
+	        <div class="col-md-3 text-center">
+	          	<a href="adopt.html">
+	          		<div id="thumbnailInfo" class="thumbnail">	        		
+	        			<img src="img/adopt.jpg" alt="Adopt">
+		        		<h1><strong>Adopt</strong></h1>
+		        		<p class="titleCard">Adopt a dog or cat today</p>	      			
+	      			</div>
+	      		</a>
+	        </div>
+	        <div class="col-md-3 text-center">
+	        	<a href="volunteer.html">
+	          		<div id="thumbnailInfo" class="thumbnail">	        		
+		        		<img src="img/volunteer.jpg" alt="Volunteer">
+			        	<div id="volunteer">
+				        	<h1><strong>Volunteer</strong></h1>
+				        	<p class="titleCard">Become a volunteer</p>
+			        	</div>		      			
+	      			</div>
+	      		</a>
+	        </div>
+	        <div class="col-md-3 text-center">
+	          	<a href="events.html">
+		          	<div id="thumbnailInfo" class="thumbnail">
+		        		<img src="img/event.jpg" alt="Events">
+			        	<h1><strong>Events</strong></h1>
+			        	<p class="titleCard">Check out our events</p>
+		      		</div>
+		        </a>
+	        </div>
+	    </div>
+    </div>  
+
+    <!-- ADOPTABLE PETS -->
+
+    <div id="adoptablePets" class="container-fluid text-center bg-blue">
+    	<span class="font-lemonada"><h1>Adoptable Pets <span class="glyphicon glyphicon-heart-empty"></span></h1></span>
+    	<div class="row">
+        	<div class="col-md-3 text-center">
+		    	<div class="cardAdoptablePets">
+		  			<img class="imgCardTeam" src="img/adoptionPets/adoptCat1.jpg" alt="Beverly">
+		  			<div class="containerCard">
+					    <h1>I'm Beverly</h1>					     
+					    <ul class="list-group list-group-flush">
+						    <li class="list-group-item">Gender: </li>
+						    <li class="list-group-item">Size: </li>
+						    <li class="list-group-item">Age: </li>
+						</ul> 
+					    <button type="submit" class="btn btn-primary pull-right adoptionButton" id="btnPetAdoption">
+				        Adopt me <span class="glyphicon glyphicon-heart"></span></button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 text-center">
+		    	<div class="cardAdoptablePets">
+		  			<img class="imgCardTeam" src="img/adoptionPets/adoptDog1.jpg" alt="Max">
+		  			<div class="containerCard">
+					    <h1>I'm Max</h1>					     
+					    <ul class="list-group list-group-flush">
+						    <li class="list-group-item">Gender: </li>
+						    <li class="list-group-item">Size: </li>
+						    <li class="list-group-item">Age: </li>
+						</ul> 
+					    <button type="submit" class="btn btn-primary pull-right adoptionButton" id="btnPetAdoption">
+				        Adopt me <span class="glyphicon glyphicon-heart"></span></button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 text-center">
+		    	<div class="cardAdoptablePets">
+		  			<img class="imgCardTeam" src="img/adoptionPets/adoptCat2.jpg" alt="Granita">
+		  			<div class="containerCard">
+					    <h1>I'm Granita</h1>					     
+					    <ul class="list-group list-group-flush">
+						    <li class="list-group-item">Gender: </li>
+						    <li class="list-group-item">Size: </li>
+						    <li class="list-group-item">Age: </li>
+						</ul> 
+					    <button type="submit" class="btn btn-primary pull-right adoptionButton" id="btnPetAdoption">
+				        Adopt me <span class="glyphicon glyphicon-heart"></span></button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 text-center">
+		    	<div class="cardAdoptablePets">
+		  			<img class="imgCardTeam" src="img/adoptionPets/adoptDog2.jpg" alt="Charlie">
+		  			<div class="containerCard">
+					    <h1>I'm Charlie</h1>					     
+					    <ul class="list-group list-group-flush">
+						    <li class="list-group-item">Gender: </li>
+						    <li class="list-group-item">Size: </li>
+						    <li class="list-group-item">Age: </li>
+						</ul> 
+					    <button type="submit" class="btn btn-primary pull-right adoptionButton" id="btnPetAdoption">
+				        Adopt me <span class="glyphicon glyphicon-heart"></span></button>
+					</div>
+				</div>
+			</div>
+		</div>	
+    </div>
+
+    <!-- SHOP -->
+
+    <div id="shop" class="container-fluid text-center bg-grey">
+    	<span class="font-lemonada"><h1>Our Shop <span class="glyphicon glyphicon-shopping-cart"></span></h1></span>
+
+    	<div class="row">
+        	<div class="col-md-4 text-center">
+		    	<div class="cardProduct">
+		    		<img class="imgCardTeam" src="img/products/warmBedSofa.jpg" alt="warm Bed Sofa">
+		    		<div class="containerCard">
+			    		<h1>Warm Bed Sofa</h1>
+			    		<p class="titleCard">Product for dogs and cats</p>  
+			    		<h2 class="price">	US $19.99 / Piece</h2>
+			    		<button type="submit" class="btn btn-primary pull-right buyButton" id="btnBuyProduct">
+				        <strong>Buy</strong> <span class="glyphicon glyphicon-shopping-cart"></span></button>
+			    	</div>	
+		    	</div>
+		    </div>
+		    <div class="col-md-4 text-center">
+		    	<div class="cardProduct">
+		    		<img class="imgCardTeam" src="img/products/petFeederBowl.jpg" alt="Pet feeder bowls">
+		    		<div class="containerCard">
+			    		<h1>Pet feeder bowls</h1>
+			    		<p class="titleCard">Automatic Feeders for dogs and cats</p>
+			    		<h2 class="price">	US $33.2 / Piece</h2>  
+			    		<button type="submit" class="btn btn-primary pull-right buyButton" id="btnBuyProduct">
+				        <strong>Buy</strong> <span class="glyphicon glyphicon-shopping-cart"></span></button>
+			    	</div>	
+		    	</div>
+		    </div>
+		    <div class="col-md-4 text-center">
+		    	<div class="cardProduct">
+		    		<img class="imgCardTeam" src="img/products/dogFood.jpg" alt="Dog Food">
+		    		<div class="containerCard">
+			    		<h1>Dog Food</h1>
+			    		<p class="titleCard">Natural and organic pet food</p> 
+			    		<h2 class="price">	US $1-3,000 / Ton</h2> 
+			    		<button type="submit" class="btn btn-primary pull-right buyButton" id="btnBuyProduct">
+				        <strong>Buy</strong> <span class="glyphicon glyphicon-shopping-cart"></span></button>
+			    	</div>	
+		    	</div>
+		    </div>
+		</div>    		
+    </div>
+
+    <!-- OUR TEAM -->
+
+    <div id="ourTeam" class="container-fluid text-center bg-blue">
+    	<span class="font-lemonada"><h1>Our Team <span class="glyphicon glyphicon-user"></span></h1></span>
+    	<div class="row">
+        	<div class="col-md-3 text-center">
+		    	<div class="card">
+		  			<img class="imgCardTeam" src="img/ourTeam/team1.jpg" alt="Sarah Krock">
+		  			<div class="containerCard">
+					    <h1>Sarah Krock</h1>
+					    <p class="titleCard">Vet Intern</p>  
+					    <a href="#" class="fa fa-facebook link"></a>
+						<a href="#" class="fa fa-twitter link"></a>
+						<a href="#" class="fa fa-instagram link"></a> 
+					    <button type="submit" class="btn btn-primary pull-right teamButton" id="btnTeamContact">
+				        Contact <span class="glyphicon glyphicon-envelope"></span></button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 text-center">
+		    	<div class="card">
+		  			<img class="imgCardTeam" src="img/ourTeam/team2.jpg" alt="Daniel Stawarski">
+		  			<div class="containerCard">
+					    <h1>Daniel Stawarski</h1>
+					    <p class="titleCard">Vet and Shelter Manager</p>				    
+					    <a href="#" class="fa fa-facebook link"></a>
+						<a href="#" class="fa fa-twitter link"></a>
+						<a href="#" class="fa fa-instagram link"></a> 
+					    <button type="submit" class="btn btn-primary pull-right teamButton" id="btnTeamContact">
+				        Contact <span class="glyphicon glyphicon-envelope"></span></button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 text-center">
+		    	<div class="card">
+		  			<img class="imgCardTeam" src="img/ourTeam/team3.jpg" alt="Dr.Alicia Hatch">
+		  			<div class="containerCard">
+					    <h1>Dr.Alicia Hatch</h1>
+					    <p class="titleCard">Medical Director</p>					    
+					    <a href="#" class="fa fa-facebook link"></a>
+						<a href="#" class="fa fa-twitter link"></a>
+						<a href="#" class="fa fa-instagram link"></a> 
+					    <button type="submit" class="btn btn-primary pull-right teamButton" id="btnTeamContact">
+				        Contact <span class="glyphicon glyphicon-envelope"></span></button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 text-center">
+		    	<div class="card">
+		  			<img class="imgCardTeam" src="img/ourTeam/team4.jpg" alt="John">
+		  			<div class="containerCard">
+					    <h1>Josh Gardner</h1>					    
+					    <p class="titleCard">Animal Cruelty Investigator</p>
+					    <a href="#" class="fa fa-facebook link"></a>
+						<a href="#" class="fa fa-twitter link"></a>
+						<a href="#" class="fa fa-instagram link"></a> 
+					    <button type="submit" class="btn btn-primary pull-right teamButton" id="btnTeamContact">
+				        Contact <span class="glyphicon glyphicon-envelope"></span></button>
+					</div>
+				</div>
+			</div>
+		</div>		
+    </div>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+	    <div class="container-fluid text-center">
+	    	<span class="font-lemonada"><h1>Contacts <span class="glyphicon glyphicon-envelope"></span></h1></span>
+	    	<div class="row">
+		        <div class="col-md-8">
+		            <div class="well well-sm">
+		                <form>
+		                <div class="row">
+		                    <div class="col-md-6">
+		                        <div class="form-group">
+		                            <label for="name">Name</label>
+		                            <div class="input-group">
+		                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
+		                                </span>   
+		                            	<input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+		                            </div> 
+		                        </div>		              
+		                        <div class="form-group">
+		                            <label for="subject">Subject</label>
+		                            <div class="input-group">
+		                                <span class="input-group-addon"><span class="glyphicon glyphicon-list"></span>
+		                                </span>
+		                            	<select id="subject" name="subject" class="form-control" required="required">
+			                                <option value="na" selected="">Choose One:</option>
+			                                <option value="adoption">Adoption</option>
+			                                <option value="volunteering">Volunteering</option>
+			                                <option value="donation">Donation</option>
+			                                <option value="suggestion">Suggestions</option>
+			                            </select>
+			                        </div>    
+		                        </div>
+		                    </div>
+		                    <div class="col-md-6">
+		                        <div class="form-group">
+		                            <label for="name">Message</label>
+		                            <div class="input-group">
+		                                <span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span>
+		                                </span>
+		                            	<textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+		                                placeholder="Message"></textarea>
+		                            </div>    
+		                        </div>
+		                    </div>
+		                    <div class="col-md-12">
+		                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+		                            Send Message <span class="glyphicon glyphicon-send"></span></button>
+		                    </div>
+		                </div>
+		                </form>
+		            </div>
+		        </div>
+		        <div class="col-md-4">
+		            <form>
+		            <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+		            <address>
+		                <strong><span class="glyphicon glyphicon-home"></span> Adress:</strong><br>
+		                795 Folsom Ave, Suite 600<br>
+		                San Francisco, CA 94107<br>
+		                
+		                <br><span class="glyphicon glyphicon-earphone"></span>
+		                (123) 456-7890
+		            </address>
+		            <address>
+		                <strong><span class="glyphicon glyphicon-envelope"></span> Email:</strong><br>
+		                <a href="mailto:#">webAdoption@gmail.com</a>
+		            </address>
+		            </form>
+		        </div>
+		    </div>
+	    </div>
+	</section>
+
+	<footer class="footer">
+      	<div class="container-fluid text-center">
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-youtube"></a>
+			<a href="#" class="fa fa-instagram"></a><br>
+			<span class="font-lemonada footer-information">Project: * WebAdoption: Adopt a friend *
+			<br>Programmer: Thiago S.</span>
+		</div>
+    </footer>
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
